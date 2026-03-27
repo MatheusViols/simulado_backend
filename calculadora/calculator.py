@@ -10,6 +10,6 @@ class Calculator:
         return a * b
 
     def divide(self, a: float, b: float) -> float:
-        # if a == 0 or b == 0 :
-        #     raise ZeroDivisionError
+        if  b == 0 :
+            raise ZeroDivisionError
         return a / b

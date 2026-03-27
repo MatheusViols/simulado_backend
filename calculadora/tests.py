@@ -29,7 +29,9 @@ class CalculatorTestCase(TestCase):
         self.assertEqual(calc.divide(-10, 2), -5)
         self.assertEqual(calc.divide(-10, -2), 5)
 
+        self.assertEqual(calc.divide(0, 10), 0)
         self.assertEqual(calc.divide(10, 0), ZeroDivisionError)
-        self.assertEqual(calc.divide(0, 10), ZeroDivisionError)
+
+
 
     # TODO(aluno): adicionar testes para subtract, multiply e divide.
